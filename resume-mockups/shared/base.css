@@ -1,0 +1,48 @@
+:root {
+  color-scheme: light;
+  font-synthesis:none;
+  text-rendering:optimizeLegibility;
+}
+
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; }
+a { color:inherit; text-underline-offset:.2em; }
+button { font:inherit; }
+img,svg { display:block; max-width:100%; }
+.skip-link { position:fixed; z-index:100; top:10px; left:10px; padding:10px 14px; transform:translateY(-150%); background:#fff; color:#111; }
+.skip-link:focus { transform:none; }
+.site-nav { display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.site-nav ul { display:flex; flex-wrap:wrap; gap:8px 18px; padding:0; margin:0; list-style:none; }
+.site-nav a { text-decoration:none; }
+.brand { font-weight:800; }
+.contact-list,.tag-list,.plain-list { padding:0; margin:0; list-style:none; }
+.contact-list { display:flex; flex-wrap:wrap; gap:10px 20px; }
+.section-heading { display:flex; align-items:baseline; justify-content:space-between; gap:24px; }
+.section-heading a { white-space:nowrap; }
+.experience-item h3,.education-item h3 { margin:0; }
+.experience-item ul { margin-bottom:0; }
+.meta { margin:0; }
+.publication-list { padding:0; margin:0; list-style:none; }
+.publication-list a { display:block; text-decoration:none; }
+.print-button { cursor:pointer; }
+
+@media (max-width:720px) {
+  .site-nav { align-items:flex-start; }
+  .site-nav ul { justify-content:flex-end; }
+  .section-heading { align-items:flex-start; flex-direction:column; gap:4px; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; }
+}
+
+@media print {
+  @page { size:A4; margin:12mm; }
+  html { font-size:9.5pt; }
+  body { background:#fff!important; color:#111!important; }
+  .screen-only,.site-nav,.print-button { display:none!important; }
+  a { color:inherit!important; text-decoration:none!important; }
+  section,.experience-item,.education-item,.publication-list li { break-inside:avoid; }
+}
