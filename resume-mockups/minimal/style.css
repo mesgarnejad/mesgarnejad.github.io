@@ -25,10 +25,8 @@ h1 { max-width:900px; margin:0; font-size:clamp(4.2rem,12vw,10rem); font-weight:
 .highlight-card:first-of-type { color:#071022; background:var(--blue); border-color:var(--blue); }
 .highlight-card:hover { transform:translateY(-4px); }
 .highlight-card:not(:first-of-type):hover { border-color:#46536a; }
-.highlight-card summary { min-height:190px; align-items:flex-start; padding:24px; }
-.highlight-card summary > span:first-child { display:flex; min-height:140px; flex-direction:column; justify-content:space-between; }
-.highlight-card summary strong { display:block; font-size:clamp(2.5rem,5vw,4.3rem); letter-spacing:-.07em; line-height:1; }
-.highlight-card summary small { display:block; max-width:170px; color:inherit; font-size:.8rem; line-height:1.4; }
+.highlight-card summary { display:flex; min-height:190px; align-items:flex-start; justify-content:space-between; gap:20px; padding:24px; }
+.highlight-card summary strong { align-self:flex-end; max-width:240px; font-size:clamp(1.65rem,3.2vw,2.7rem); letter-spacing:-.055em; line-height:1.05; }
 .highlight-card .details-icon { flex:0 0 auto; background:rgba(120,152,255,.12); }
 .highlight-card:first-of-type .details-icon { background:rgba(7,16,34,.12); color:#071022; }
 .highlight-detail { padding:0 24px 24px; border-top:1px solid var(--line); animation:reveal .25s ease both; }
@@ -90,7 +88,6 @@ summary::-webkit-details-marker { display:none; }
   .contact-list a { padding:7px 10px; font-size:.75rem; }
   .highlights,.publication-list { grid-template-columns:1fr; }
   .highlight-card summary { min-height:145px; }
-  .highlight-card summary > span:first-child { min-height:95px; }
 }
 @media print {
   :root { color-scheme:light; }
@@ -100,8 +97,6 @@ summary::-webkit-details-marker { display:none; }
   .highlights { gap:2mm; }
   .highlight-card { min-height:24mm; color:#111!important; background:none!important; border:1px solid #bbb; }
   .highlight-card summary { min-height:auto; padding:4mm; }
-  .highlight-card summary > span:first-child { min-height:auto; }
-  .highlight-card summary small { margin-top:3mm; }
   .highlight-detail { padding:0 4mm 4mm; border-color:#bbb!important; }
   .resume-grid { gap:7mm; padding:7mm 0 0; }
   section + section { margin-top:7mm; }

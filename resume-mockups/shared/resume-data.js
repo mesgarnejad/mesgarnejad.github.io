@@ -12,8 +12,7 @@ export const resume = {
   ],
   highlights: [
     {
-      value: "LLM",
-      label: "Applied AI systems",
+      title: "Applied AI systems",
       details: [
         "LLM tooling and production RAG for engineering workflows",
         "MCP servers connecting models with technical systems",
@@ -21,8 +20,7 @@ export const resume = {
       ]
     },
     {
-      value: "FEM",
-      label: "Computational mechanics",
+      title: "Computational mechanics",
       details: [
         "Nonlinear finite-element and multiphysics simulation",
         "Linear-algebra back ends and Krylov solvers",
@@ -30,8 +28,7 @@ export const resume = {
       ]
     },
     {
-      value: "Systems",
-      label: "Software engineering",
+      title: "Software engineering",
       details: [
         "Legacy components in Fortran and C",
         "Newer systems in Rust, C++, and C#",

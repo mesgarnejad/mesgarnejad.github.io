@@ -22,7 +22,7 @@ h1::before { content:"> "; color:var(--green); }
 .contact-label::after { content:":"; }
 .highlights { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; padding:1px; background:var(--grid); }
 .highlights article { padding:30px; background:var(--panel); }
-.highlights strong { display:block; color:var(--green); font-size:clamp(2.3rem,4.5vw,4rem); line-height:1; }
+.highlights strong { display:block; color:var(--green); font-size:clamp(1.35rem,2.5vw,2.1rem); line-height:1.1; }
 .highlights span { display:block; margin-top:12px; color:var(--muted); font-family:system-ui,sans-serif; font-size:.8rem; line-height:1.45; }
 .resume-grid { display:grid; grid-template-columns:minmax(0,2fr) minmax(300px,.86fr); gap:44px; padding:70px 0 110px; }
 section + section { margin-top:65px; }

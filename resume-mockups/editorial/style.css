@@ -19,7 +19,7 @@ h1 { max-width:900px; margin:0; font-size:clamp(4rem,10vw,8.8rem); font-weight:4
 .highlights { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); }
 .highlights article { display:flex; min-height:165px; flex-direction:column; justify-content:space-between; padding:28px; border-right:1px solid var(--rule); }
 .highlights article:last-child { border:0; }
-.highlights strong { font-family:Georgia,serif; font-size:clamp(2.7rem,5vw,4.5rem); font-weight:400; letter-spacing:-.06em; }
+.highlights strong { font-family:Georgia,serif; font-size:clamp(1.5rem,2.7vw,2.35rem); font-weight:400; letter-spacing:-.045em; line-height:1.1; }
 .highlights span { max-width:170px; color:var(--muted); font-size:.8rem; line-height:1.35; }
 .resume-grid { display:grid; grid-template-columns:minmax(0,2.2fr) minmax(270px,1fr); gap:clamp(50px,9vw,130px); padding:100px 0 140px; }
 section + section { margin-top:100px; }

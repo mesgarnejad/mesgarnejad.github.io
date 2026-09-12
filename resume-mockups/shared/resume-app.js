@@ -32,12 +32,12 @@ const experienceMarkup = (item, index, interactive) => {
 
 const highlightMarkup = (item, interactive) => {
   if (!interactive) {
-    return `<article><strong>${escapeHtml(item.value)}</strong><span>${escapeHtml(item.label)}</span></article>`;
+    return `<article><strong>${escapeHtml(item.title)}</strong></article>`;
   }
 
   return `<details class="highlight-card">
     <summary>
-      <span><strong>${escapeHtml(item.value)}</strong><small>${escapeHtml(item.label)}</small></span>
+      <strong>${escapeHtml(item.title)}</strong>
       <span class="details-icon" aria-hidden="true">+</span>
     </summary>
     <div class="highlight-detail"><ul>${item.details.map((detail) => `<li>${escapeHtml(detail)}</li>`).join("")}</ul></div>
