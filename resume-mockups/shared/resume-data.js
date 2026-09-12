@@ -12,11 +12,12 @@ export const resume = {
   ],
   highlights: [
     {
-      title: "Applied AI systems",
+      title: "Applied AI/ML",
       details: [
         "LLM tooling and production RAG for engineering workflows",
         "MCP servers connecting models with technical systems",
-        "OpenTelemetry instrumentation for service observability"
+        "OpenTelemetry instrumentation for service observability",
+        "Graph-based and time-series surrogate models for engineering systems"
       ]
     },
     {
@@ -45,11 +46,11 @@ export const resume = {
       dates: "Apr 2024 — Present",
       bullets: [
         "Develop LLM tooling and MCP servers for engineering workflows, with OpenTelemetry instrumentation for service observability.",
+        "Develop graph-based and time-series surrogate models for engineering systems, including nonlinear solid mechanics and structural deformation.",
         "Architect and maintain core linear-algebra solvers and a simplicial-complex meshing library used across the production simulation stack, driving code-health and correctness standards.",
         "Work across a heterogeneous stack spanning legacy Fortran/C components, newer Rust/C++/C# systems, and Python APIs and tooling, diagnosing and hardening cross-runtime issues including Windows DLL loading and thread safety.",
         "Extended the production Python API with licensing and user-identity features, improved performance, and simplified dependencies for prototyping and ML integration.",
         "Built and maintain CI/CD for a C++/.NET/Python/Fortran/TypeScript stack, supported by unit-test suites in C++, Fortran, and Python.",
-        "Collaborate on graph-based and time-series ML surrogates for nonlinear solid mechanics and structural deformation.",
         "Delivered a production RAG component and DNN training pipelines; mentor engineers and interns on modeling, simulation, and code quality."
       ]
     },
