@@ -37,9 +37,13 @@ for pattern in STALE_PATTERNS:
     if pattern.search(combined):
         errors.append(f"Stale template content matched: {pattern.pattern}")
 
-for fact in ["10×", "5×", "16+", "Founder’s Award", "US20210276253A1"]:
+for fact in ["16+", "LLM tooling", "MCP servers", "OpenTelemetry", "Founder’s Award", "US20210276253A1"]:
     if fact not in combined:
         errors.append(f"Expected resume fact missing: {fact}")
+
+for removed_claim in ["10×", "5×", "10x", "5x"]:
+    if removed_claim in combined:
+        errors.append(f"Removed speedup claim still present: {removed_claim}")
 
 for path in REQUIRED[1:4]:
     html = path.read_text(encoding="utf-8")

@@ -3,7 +3,7 @@ export const resume = {
   role: "Senior Software Engineer · C++ / HPC / Physics Simulation",
   availability: "US citizen · No sponsorship required",
   summary:
-    "Computational scientist and software engineer with 16+ years of academic and industrial experience architecting and scaling high-performance C++ codebases for physics simulation, numerical methods, and computational geometry. Builds production FEM solvers, meshing libraries, and linear-algebra back ends, with Python tooling for ML prototyping. Leads architecture, code health, and testability initiatives while mentoring engineers who turn research prototypes into customer-facing features.",
+    "Computational scientist and software engineer with 16+ years of academic and industrial experience architecting and scaling high-performance C++ codebases for physics simulation, numerical methods, and computational geometry. Builds production FEM solvers, meshing libraries, and linear-algebra back ends alongside LLM tooling, MCP servers, and OpenTelemetry-based observability. Leads architecture, code health, and testability initiatives while mentoring engineers who turn research prototypes into customer-facing features.",
   contacts: [
     { label: "Email", value: "a.mesgarnejad@gmail.com", href: "mailto:a.mesgarnejad@gmail.com" },
     { label: "GitHub", value: "mesgarnejad", href: "https://github.com/mesgarnejad" },
@@ -11,10 +11,10 @@ export const resume = {
     { label: "Web", value: "mesgarnejad.com", href: "https://www.mesgarnejad.com" }
   ],
   highlights: [
-    { value: "10×", label: "speedup in production SACS components" },
-    { value: "5×", label: "speedup in wave-response algorithms" },
-    { value: "16+", label: "years in simulation and scientific computing" },
-    { value: "2024", label: "Bentley Systems Founder’s Award" }
+    { value: "LLM", label: "tooling for production engineering workflows" },
+    { value: "MCP", label: "servers connecting models with technical systems" },
+    { value: "OTel", label: "observability across modern software services" },
+    { value: "16+", label: "years in simulation and scientific computing" }
   ],
   experience: [
     {
@@ -27,6 +27,7 @@ export const resume = {
         "Own the C++/.NET/Python/Fortran architecture behind the product API, diagnosing and hardening cross-runtime issues including Windows DLL loading and thread safety.",
         "Extended the production Python API with licensing and user-identity features, improved performance, and simplified dependencies for prototyping and ML integration.",
         "Built and maintain CI/CD for a C++/.NET/Python/Fortran/TypeScript stack, supported by unit-test suites in C++, Fortran, and Python.",
+        "Develop LLM tooling and MCP servers for engineering workflows, with OpenTelemetry instrumentation for service observability.",
         "Collaborate on graph-based and time-series ML surrogates for nonlinear solid mechanics and structural deformation.",
         "Delivered a production RAG component and DNN training pipelines; mentor engineers and interns on modeling, simulation, and code quality."
       ]
@@ -39,8 +40,7 @@ export const resume = {
       bullets: [
         "Designed and implemented the Plaxis–SACS interface for the PISA soil–structure interaction model, with validation against the underlying geotechnical physics.",
         "Developed mesh refinement, smoothing, curved-shell meshing, and stress-concentration-factor extraction and smoothing in the JointMesher computational-geometry component.",
-        "Improved core SACS production algorithms by up to 10×.",
-        "Optimized time integration and sorting in the SACS Wave Response fluid–structure interaction module, achieving up to 5× speedup."
+        "Improved core SACS production algorithms and optimized time integration and sorting in the SACS Wave Response fluid–structure interaction module."
       ]
     },
     {
@@ -89,8 +89,8 @@ export const resume = {
     { name: "Programming", skills: ["C", "C++", "Modern Fortran", "Python", "CUDA"] },
     { name: "Numerical algorithms", skills: ["FEM", "Mesh generation & refinement", "Krylov solvers", "Numerical optimization"] },
     { name: "Computational geometry", skills: ["Meshing", "Graph algorithms", "Shell & surface meshing"] },
-    { name: "Engineering systems", skills: ["API design", "Modular architecture", "CI/CD", "Unit testing", "Design patterns", "Agile"] },
-    { name: "ML / AI", skills: ["PyTorch", "JAX", "LLM / RAG", "MCP", "Jupyter"] },
+    { name: "Engineering systems", skills: ["API design", "Modular architecture", "CI/CD", "Unit testing", "OpenTelemetry", "Observability"] },
+    { name: "AI engineering", skills: ["LLM tooling", "RAG", "MCP servers", "PyTorch", "JAX", "Jupyter"] },
     { name: "HPC", skills: ["MPI", "CUDA", "PETSc", "libMesh"] },
     { name: "Platforms & interop", skills: ["Linux", "Windows", "Slurm", "OpenMPI", "MSVC", "GNU", "Intel", "pythonnet / CLR"] }
   ],
