@@ -37,7 +37,7 @@ for pattern in STALE_PATTERNS:
     if pattern.search(combined):
         errors.append(f"Stale template content matched: {pattern.pattern}")
 
-for fact in ["16+", "LLM tooling", "MCP servers", "OpenTelemetry", "Founder’s Award", "US20210276253A1"]:
+for fact in ["16+", "LLM tooling", "MCP servers", "OpenTelemetry", "Rust", "C#", "Founder’s Award", "US20210276253A1"]:
     if fact not in combined:
         errors.append(f"Expected resume fact missing: {fact}")
 

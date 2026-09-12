@@ -30,6 +30,20 @@ const experienceMarkup = (item, index, interactive) => {
   </details>`;
 };
 
+const highlightMarkup = (item, interactive) => {
+  if (!interactive) {
+    return `<article><strong>${escapeHtml(item.value)}</strong><span>${escapeHtml(item.label)}</span></article>`;
+  }
+
+  return `<details class="highlight-card">
+    <summary>
+      <span><strong>${escapeHtml(item.value)}</strong><small>${escapeHtml(item.label)}</small></span>
+      <span class="details-icon" aria-hidden="true">+</span>
+    </summary>
+    <div class="highlight-detail"><ul>${item.details.map((detail) => `<li>${escapeHtml(detail)}</li>`).join("")}</ul></div>
+  </details>`;
+};
+
 function render() {
   const root = document.querySelector("#resume");
   const theme = document.body.dataset.theme;
@@ -51,7 +65,7 @@ function render() {
 
     <section class="highlights" aria-labelledby="highlights-title">
       <h2 id="highlights-title" class="visually-hidden">Career highlights</h2>
-      ${resume.highlights.map((item) => `<article><strong>${escapeHtml(item.value)}</strong><span>${escapeHtml(item.label)}</span></article>`).join("")}
+      ${resume.highlights.map((item) => highlightMarkup(item, interactive)).join("")}
     </section>
 
     <div class="resume-grid">

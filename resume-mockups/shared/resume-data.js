@@ -11,10 +11,34 @@ export const resume = {
     { label: "Web", value: "mesgarnejad.com", href: "https://www.mesgarnejad.com" }
   ],
   highlights: [
-    { value: "LLM", label: "tooling for production engineering workflows" },
-    { value: "MCP", label: "servers connecting models with technical systems" },
-    { value: "OTel", label: "observability across modern software services" },
-    { value: "16+", label: "years in simulation and scientific computing" }
+    {
+      value: "LLM",
+      label: "Applied AI systems",
+      details: [
+        "LLM tooling and production RAG for engineering workflows",
+        "MCP servers connecting models with technical systems",
+        "OpenTelemetry instrumentation for service observability"
+      ]
+    },
+    {
+      value: "FEM",
+      label: "Computational mechanics",
+      details: [
+        "Nonlinear finite-element and multiphysics simulation",
+        "Linear-algebra back ends and Krylov solvers",
+        "Computational geometry, meshing, MPI, and CUDA"
+      ]
+    },
+    {
+      value: "Systems",
+      label: "Software engineering",
+      details: [
+        "Legacy components in Fortran and C",
+        "Newer systems in Rust, C++, and C#",
+        "APIs, automation, and developer tooling in Python",
+        "CI/CD, unit testing, and cross-runtime integration"
+      ]
+    }
   ],
   experience: [
     {
@@ -25,7 +49,7 @@ export const resume = {
       bullets: [
         "Develop LLM tooling and MCP servers for engineering workflows, with OpenTelemetry instrumentation for service observability.",
         "Architect and maintain core linear-algebra solvers and a simplicial-complex meshing library used across the production simulation stack, driving code-health and correctness standards.",
-        "Own the C++/.NET/Python/Fortran architecture behind the product API, diagnosing and hardening cross-runtime issues including Windows DLL loading and thread safety.",
+        "Work across a heterogeneous stack spanning legacy Fortran/C components, newer Rust/C++/C# systems, and Python APIs and tooling, diagnosing and hardening cross-runtime issues including Windows DLL loading and thread safety.",
         "Extended the production Python API with licensing and user-identity features, improved performance, and simplified dependencies for prototyping and ML integration.",
         "Built and maintain CI/CD for a C++/.NET/Python/Fortran/TypeScript stack, supported by unit-test suites in C++, Fortran, and Python.",
         "Collaborate on graph-based and time-series ML surrogates for nonlinear solid mechanics and structural deformation.",
@@ -86,7 +110,7 @@ export const resume = {
     }
   ],
   skillGroups: [
-    { name: "Programming", skills: ["C", "C++", "Modern Fortran", "Python", "CUDA"] },
+    { name: "Programming", skills: ["C", "C++", "C#", "Rust", "Modern Fortran", "Python", "CUDA"] },
     { name: "Numerical algorithms", skills: ["FEM", "Mesh generation & refinement", "Krylov solvers", "Numerical optimization"] },
     { name: "Computational geometry", skills: ["Meshing", "Graph algorithms", "Shell & surface meshing"] },
     { name: "Engineering systems", skills: ["API design", "Modular architecture", "CI/CD", "Unit testing", "OpenTelemetry", "Observability"] },

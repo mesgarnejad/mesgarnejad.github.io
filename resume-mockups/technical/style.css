@@ -20,7 +20,7 @@ h1::before { content:"> "; color:var(--green); }
 .contact-list a { display:grid; grid-template-columns:auto 1fr; gap:9px; text-decoration:none; }
 .contact-label { color:var(--muted); }
 .contact-label::after { content:":"; }
-.highlights { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; padding:1px; background:var(--grid); }
+.highlights { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; padding:1px; background:var(--grid); }
 .highlights article { padding:30px; background:var(--panel); }
 .highlights strong { display:block; color:var(--green); font-size:clamp(2.3rem,4.5vw,4rem); line-height:1; }
 .highlights span { display:block; margin-top:12px; color:var(--muted); font-family:system-ui,sans-serif; font-size:.8rem; line-height:1.45; }
@@ -64,7 +64,7 @@ section + section { margin-top:65px; }
 .noscript { padding:20px; text-align:center; }
 @media (max-width:840px) {
   .resume-grid { grid-template-columns:1fr; }
-  .highlights { grid-template-columns:1fr 1fr; }
+  .highlights { grid-template-columns:1fr; }
 }
 @media (max-width:600px) {
   .site-nav,#resume { width:min(100% - 28px,1280px); }
