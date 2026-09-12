@@ -23,11 +23,11 @@ export const resume = {
       location: "Remote",
       dates: "Apr 2024 — Present",
       bullets: [
+        "Develop LLM tooling and MCP servers for engineering workflows, with OpenTelemetry instrumentation for service observability.",
         "Architect and maintain core linear-algebra solvers and a simplicial-complex meshing library used across the production simulation stack, driving code-health and correctness standards.",
         "Own the C++/.NET/Python/Fortran architecture behind the product API, diagnosing and hardening cross-runtime issues including Windows DLL loading and thread safety.",
         "Extended the production Python API with licensing and user-identity features, improved performance, and simplified dependencies for prototyping and ML integration.",
         "Built and maintain CI/CD for a C++/.NET/Python/Fortran/TypeScript stack, supported by unit-test suites in C++, Fortran, and Python.",
-        "Develop LLM tooling and MCP servers for engineering workflows, with OpenTelemetry instrumentation for service observability.",
         "Collaborate on graph-based and time-series ML surrogates for nonlinear solid mechanics and structural deformation.",
         "Delivered a production RAG component and DNN training pipelines; mentor engineers and interns on modeling, simulation, and code quality."
       ]
