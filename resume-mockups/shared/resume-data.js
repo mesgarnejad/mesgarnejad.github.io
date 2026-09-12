@@ -1,6 +1,6 @@
 export const resume = {
   name: "Ata Mesgarnejad",
-  role: "Senior Software Engineer · C++ / HPC / Physics Simulation",
+  role: "Senior Software Engineer · Ph.D. · ML/AI · HPC · Computational Mechanics",
   availability: "US citizen · No sponsorship required",
   summary:
     "Computational scientist and software engineer with 16+ years of academic and industrial experience architecting and scaling high-performance C++ codebases for physics simulation, numerical methods, and computational geometry. Builds production FEM solvers, meshing libraries, and linear-algebra back ends alongside LLM tooling, MCP servers, and OpenTelemetry-based observability. Leads architecture, code health, and testability initiatives while mentoring engineers who turn research prototypes into customer-facing features.",
