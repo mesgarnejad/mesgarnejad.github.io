@@ -1,6 +1,6 @@
 # Resume design mockups
 
-Three static, dependency-free resume concepts live under `resume-mockups/`. The repository root is intentionally unchanged so none of these concepts replaces the future live homepage.
+The approved dark minimal resume is the production homepage. Three static, dependency-free design concepts remain under `resume-mockups/` for reference.
 
 ## Preview locally
 
@@ -12,6 +12,7 @@ python3 -m http.server 8000
 
 Then open:
 
+- Production homepage: <http://localhost:8000/>
 - Comparison page: <http://localhost:8000/resume-mockups/>
 - Editorial: <http://localhost:8000/resume-mockups/editorial/>
 - Technical / HPC: <http://localhost:8000/resume-mockups/technical/>

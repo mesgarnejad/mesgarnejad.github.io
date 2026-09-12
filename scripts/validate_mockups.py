@@ -6,6 +6,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 MOCKUPS = ROOT / "resume-mockups"
 REQUIRED = [
+    ROOT / "index.html",
     MOCKUPS / "index.html",
     MOCKUPS / "editorial" / "index.html",
     MOCKUPS / "technical" / "index.html",
@@ -45,9 +46,11 @@ for removed_claim in ["10×", "5×", "10x", "5x"]:
     if removed_claim in combined:
         errors.append(f"Removed speedup claim still present: {removed_claim}")
 
-for path in REQUIRED[1:4]:
+for path in [ROOT / "index.html", *REQUIRED[2:5]]:
     html = path.read_text(encoding="utf-8")
-    for marker in ['lang="en"', 'name="viewport"', 'class="skip-link"', "../shared/resume-app.js"]:
+    markers = ['lang="en"', 'name="viewport"', 'class="skip-link"']
+    markers.append("resume-mockups/shared/resume-app.js" if path == ROOT / "index.html" else "../shared/resume-app.js")
+    for marker in markers:
         if marker not in html:
             errors.append(f"{path.relative_to(ROOT)} missing {marker}")
 
@@ -55,4 +58,4 @@ if errors:
     print("\n".join(f"ERROR: {error}" for error in errors), file=sys.stderr)
     raise SystemExit(1)
 
-print(f"Validated {len(text_files)} mockup HTML/JS files and 3 stable preview routes.")
+print(f"Validated the production root, {len(text_files)} mockup HTML/JS files, and 3 stable preview routes.")
