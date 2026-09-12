@@ -16,7 +16,7 @@ h1 { max-width:900px; margin:0; font-size:clamp(4rem,10vw,8.8rem); font-weight:4
 .contact-list { justify-content:flex-end; border-top:1px solid var(--rule); padding-top:22px; }
 .contact-list a { display:flex; gap:8px; text-decoration:none; }
 .contact-label { color:var(--muted); }
-.highlights { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); }
+.highlights { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); }
 .highlights article { display:flex; min-height:165px; flex-direction:column; justify-content:space-between; padding:28px; border-right:1px solid var(--rule); }
 .highlights article:last-child { border:0; }
 .highlights strong { font-family:Georgia,serif; font-size:clamp(1.5rem,2.7vw,2.35rem); font-weight:400; letter-spacing:-.045em; line-height:1.1; }

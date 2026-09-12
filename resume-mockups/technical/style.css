@@ -20,7 +20,7 @@ h1::before { content:"> "; color:var(--green); }
 .contact-list a { display:grid; grid-template-columns:auto 1fr; gap:9px; text-decoration:none; }
 .contact-label { color:var(--muted); }
 .contact-label::after { content:":"; }
-.highlights { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; padding:1px; background:var(--grid); }
+.highlights { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; padding:1px; background:var(--grid); }
 .highlights article { padding:30px; background:var(--panel); }
 .highlights strong { display:block; color:var(--green); font-size:clamp(1.35rem,2.5vw,2.1rem); line-height:1.1; }
 .highlights span { display:block; margin-top:12px; color:var(--muted); font-family:system-ui,sans-serif; font-size:.8rem; line-height:1.45; }

@@ -23,7 +23,7 @@ h1 { max-width:900px; margin:0; font-size:clamp(4.2rem,12vw,10rem); font-weight:
 .contact-icon { display:block; width:19px; height:19px; }
 .contact-icon svg { width:100%; height:100%; }
 .contact-label,.contact-value { display:none; }
-.highlights { display:grid; grid-template-columns:repeat(3,1fr); align-items:start; gap:12px; }
+.highlights { display:grid; grid-template-columns:repeat(4,1fr); align-items:start; gap:12px; }
 .highlight-card { overflow:hidden; border:1px solid var(--line); border-radius:18px; background:var(--surface); transition:transform .25s ease,border-color .25s ease; }
 .highlight-card:first-of-type { color:#071022; background:var(--blue); border-color:var(--blue); }
 .highlight-card:hover { transform:translateY(-4px); }

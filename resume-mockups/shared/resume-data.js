@@ -25,7 +25,16 @@ export const resume = {
       details: [
         "Nonlinear finite-element and multiphysics simulation",
         "Linear-algebra back ends and Krylov solvers",
-        "Computational geometry, meshing, MPI, and CUDA"
+        "Computational geometry and production meshing"
+      ]
+    },
+    {
+      title: "HPC",
+      details: [
+        "Distributed-memory parallelism with MPI",
+        "GPU acceleration with CUDA",
+        "PETSc and libMesh for large-scale numerical simulation",
+        "Cluster environments with Slurm, OpenMPI, GNU, and Intel toolchains"
       ]
     },
     {
