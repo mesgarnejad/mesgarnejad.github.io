@@ -9,8 +9,18 @@ const escapeHtml = (value) =>
     "'": "&#039;"
   })[character]);
 
+const icons = {
+  Email: '<path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/>',
+  GitHub: '<path d="m8 9-3 3 3 3m8-6 3 3-3 3m-2-10-4 14"/>',
+  LinkedIn: '<rect x="3" y="5" width="18" height="15" rx="2"/><path d="M8 10v6m0-8v.01M12 16v-6m0 3c0-1.7 1.1-3 2.6-3 1.4 0 2.4 1.1 2.4 3v3"/>',
+  Web: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/>'
+};
+
+const icon = (label) =>
+  `<span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${icons[label]}</svg></span>`;
+
 const link = (item) =>
-  `<a href="${escapeHtml(item.href)}"${item.href.startsWith("http") ? ' target="_blank" rel="noreferrer"' : ""}><span class="contact-label">${escapeHtml(item.label)}</span><span>${escapeHtml(item.value)}</span></a>`;
+  `<a href="${escapeHtml(item.href)}" aria-label="${escapeHtml(item.label)}: ${escapeHtml(item.value)}" title="${escapeHtml(item.label)}"${item.href.startsWith("http") ? ' target="_blank" rel="noreferrer"' : ""}>${icon(item.label)}<span class="contact-label">${escapeHtml(item.label)}</span><span class="contact-value">${escapeHtml(item.value)}</span></a>`;
 
 const experienceMarkup = (item, index, interactive) => {
   const content = `

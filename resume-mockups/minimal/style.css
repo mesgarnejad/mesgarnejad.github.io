@@ -17,9 +17,12 @@ h1 { max-width:900px; margin:0; font-size:clamp(4.2rem,12vw,10rem); font-weight:
 .availability { margin:0; padding:8px 12px; border:1px solid var(--line); border-radius:30px; background:var(--surface); color:var(--muted); font-size:.75rem; white-space:nowrap; }
 .summary { max-width:760px; margin:85px 0 40px 25%; color:#c1c8d4; font-size:clamp(1.15rem,2vw,1.5rem); line-height:1.65; }
 .contact-list { justify-content:flex-end; gap:10px; }
-.contact-list a { display:block; padding:8px 14px; border:1px solid var(--line); border-radius:24px; text-decoration:none; transition:background .2s ease,border-color .2s ease; }
+.contact-list a { display:grid; width:44px; height:44px; place-items:center; border:1px solid var(--line); border-radius:50%; text-decoration:none; transition:background .2s ease,border-color .2s ease,transform .2s ease; }
 .contact-list a:hover { border-color:var(--blue); background:var(--wash); }
-.contact-label { display:none; }
+.contact-list a:hover { transform:translateY(-2px); }
+.contact-icon { display:block; width:19px; height:19px; }
+.contact-icon svg { width:100%; height:100%; }
+.contact-label,.contact-value { display:none; }
 .highlights { display:grid; grid-template-columns:repeat(3,1fr); align-items:start; gap:12px; }
 .highlight-card { overflow:hidden; border:1px solid var(--line); border-radius:18px; background:var(--surface); transition:transform .25s ease,border-color .25s ease; }
 .highlight-card:first-of-type { color:#071022; background:var(--blue); border-color:var(--blue); }
@@ -85,7 +88,7 @@ summary::-webkit-details-marker { display:none; }
   .site-nav,#resume { width:min(100% - 28px,1120px); }
   .site-nav ul li:not(:last-child) { display:none; }
   .contact-list { justify-content:flex-start; }
-  .contact-list a { padding:7px 10px; font-size:.75rem; }
+  .contact-list a { width:40px; height:40px; }
   .highlights,.publication-list { grid-template-columns:1fr; }
   .highlight-card summary { min-height:145px; }
 }
@@ -94,6 +97,10 @@ summary::-webkit-details-marker { display:none; }
   .hero { padding:0 0 7mm; }
   h1 { font-size:40pt; }
   .summary { margin:6mm 0; }
+  .contact-list a { display:flex; width:auto; height:auto; gap:1.5mm; border:0; }
+  .contact-icon { display:none; }
+  .contact-label,.contact-value { display:inline; }
+  .contact-label::after { content:":"; }
   .highlights { gap:2mm; }
   .highlight-card { min-height:24mm; color:#111!important; background:none!important; border:1px solid #bbb; }
   .highlight-card summary { min-height:auto; padding:4mm; }
